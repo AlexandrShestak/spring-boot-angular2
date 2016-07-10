@@ -1,10 +1,9 @@
-package io.abnd.rest;
+package com.shestakam.rest;
 
 import com.google.gson.JsonObject;
-import io.abnd.entity.Contact;
-import io.abnd.entity.ContactRepository;
+import com.shestakam.entity.Contact;
+import com.shestakam.entity.ContactRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

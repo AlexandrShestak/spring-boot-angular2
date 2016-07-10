@@ -1,4 +1,4 @@
-package io.abnd.entity;
+package com.shestakam.entity;
 
 import org.springframework.data.repository.CrudRepository;
 

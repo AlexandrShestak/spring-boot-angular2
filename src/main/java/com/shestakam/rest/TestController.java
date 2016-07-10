@@ -1,13 +1,12 @@
-package io.abnd.rest;
+package com.shestakam.rest;
 
+import com.shestakam.service.intf.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.google.gson.JsonObject;
-
-import io.abnd.service.intf.TestService;
 
 @RestController
 public class TestController {

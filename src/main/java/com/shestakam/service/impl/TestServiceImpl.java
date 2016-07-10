@@ -1,8 +1,7 @@
-package io.abnd.service.impl;
+package com.shestakam.service.impl;
 
+import com.shestakam.service.intf.TestService;
 import org.springframework.stereotype.Service;
-
-import io.abnd.service.intf.TestService;
 
 @Service
 public class TestServiceImpl implements TestService {
