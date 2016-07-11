@@ -8,6 +8,7 @@ import {ROUTER_DIRECTIVES, ROUTER_PROVIDERS, Router, Routes} from '@angular/rout
 import {Bootstrap4Component} from './bootstrap4/bootstrap4.component';
 import {HomeComponent} from './home/home.component';*/
 import {LoginComponent} from './login/login.component';
+import {HomeComponent} from './home/home.component';
 
 @Component({
     selector: 'spring-boot-angular2',
@@ -17,8 +18,7 @@ import {LoginComponent} from './login/login.component';
 })
 @Routes([
     {path: '/', component: LoginComponent},
-    {path: '/bootstrap4', component: LoginComponent},
-    {path: '/hello', component: LoginComponent}
+    {path: '/home', component: HomeComponent}
 ])
 export class AppComponent {
 

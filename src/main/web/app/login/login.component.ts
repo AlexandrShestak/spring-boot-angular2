@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import {Http, Headers, HTTP_PROVIDERS} from '@angular/http';
 import {Contact} from "./contact";
+import {Router} from '@angular/router'
 import 'rxjs/add/operator/toPromise';
 
 @Component({
@@ -15,7 +16,8 @@ export class LoginComponent implements OnInit {
     @Input() contact: Contact;
     loginUrl : string;
 
-    constructor(private http : Http) {
+    constructor(private http : Http,
+                private router: Router) {
     }
 
     ngOnInit():any {
@@ -23,7 +25,7 @@ export class LoginComponent implements OnInit {
         this.loginUrl = 'login';
     }
 
- /*   login(contact: Contact):  Promise<Contact> {*/
+    /*   login(contact: Contact):  Promise<Contact> {*/
     login(contact: Contact) {
         console.info('Login button pressed email: '
             + this.contact.email + " password : " + this.contact.password);
@@ -34,7 +36,10 @@ export class LoginComponent implements OnInit {
         return this.http
             .post(this.loginUrl, JSON.stringify(this.contact), {headers: headers})
             .toPromise()
-            .then(res =>  console.info('login result : ' + res.json().data))
+            .then(res =>  {
+                console.info('login result : ' + res.json().data)
+                this.router.navigateByUrl('/home');
+            })
             .catch(this.handleError);
     }
 
