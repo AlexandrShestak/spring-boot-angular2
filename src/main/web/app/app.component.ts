@@ -18,7 +18,7 @@ import {HomeComponent} from './home/home.component';
 })
 @Routes([
     {path: '/', component: LoginComponent},
-    {path: '/home', component: HomeComponent}
+    {path: '/home/:email', component: HomeComponent}
 ])
 export class AppComponent {
 

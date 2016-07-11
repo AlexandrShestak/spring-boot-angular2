@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
             .toPromise()
             .then(res =>  {
                 console.info('login result : ' + res.json().data)
-                this.router.navigateByUrl('/home');
+                this.router.navigate(['/home',this.contact.email]);
             })
             .catch(this.handleError);
     }

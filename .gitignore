@@ -46,3 +46,5 @@ src/main/web/scss/.tmp/
 src/main/web/js/lib/
 src/main/web/typings/
 src/main/webapp/resources/
+
+src/main/resources/application.properties
