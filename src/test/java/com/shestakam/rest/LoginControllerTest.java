@@ -1,6 +1,5 @@
 package com.shestakam.rest;
 
-import com.google.gson.JsonObject;
 import com.shestakam.SpringBootAngular2Application;
 import com.shestakam.entity.Contact;
 import org.junit.Assert;
@@ -29,7 +28,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = SpringBootAngular2Application.class)
 @WebAppConfiguration
-public class LoginControllerTest /*extends ApplicationTests */ {
+public class LoginControllerTest {
 
     private MediaType contentType = new MediaType(MediaType.APPLICATION_JSON.getType(),
             MediaType.APPLICATION_JSON.getSubtype(),
