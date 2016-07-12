@@ -19,6 +19,9 @@ public class Contact {
     @Column(nullable = false)
     private String password;
 
+    @Column(nullable = false)
+    private boolean confirm;
+
     public String getEmail() {
         return email;
     }
@@ -33,5 +36,13 @@ public class Contact {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public boolean isConfirm() {
+        return confirm;
+    }
+
+    public void setConfirm(boolean confirm) {
+        this.confirm = confirm;
     }
 }
